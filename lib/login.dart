@@ -27,7 +27,11 @@ class _LoginState extends State<Login> {
      centerTitle: true,
       ),
       body: Center(
-        child: Container(
+        child:Container(
+          color: const Color.fromARGB(255, 244, 243, 243),
+          height: 500,  
+          width: double.infinity,
+          
           padding: EdgeInsets.all(20),
           child: Column(
            mainAxisAlignment: MainAxisAlignment.center,
@@ -42,8 +46,10 @@ TextField(
   controller: usernameController,
   decoration: InputDecoration(
     hintText:"Email/Mobile Number",
-    prefixIcon: Icon(Icons.email), 
-    border: OutlineInputBorder(),
+    suffixIcon: Icon(Icons.email), 
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12)
+    ),
   ),
 ),
 SizedBox(height: 10,),
@@ -56,9 +62,9 @@ TextField(
   obscureText: true,
   decoration: InputDecoration(
     hintText:"Password" ,
-    prefixIcon: Icon(Icons.lock),
+    suffixIcon: Icon(Icons.lock),
     border: OutlineInputBorder(
-      
+      borderRadius: BorderRadius.circular(12)
     ),
   ),
 ),
@@ -71,8 +77,8 @@ ElevatedButton(
   ),
   onPressed: (){
   
-  if(usernameController.text=="mufaz@gmail.com"&&
-  passwordController.text =="mufaz@123"){
+  if(usernameController.text=="mufaz"&&
+  passwordController.text =="1234"){
     Navigator.pushReplacement(
       context, MaterialPageRoute(
         builder: (context) =>Home())
@@ -108,6 +114,7 @@ TextButton(onPressed: (){
           ),
           
         ),
+        
       ),
     );
   }

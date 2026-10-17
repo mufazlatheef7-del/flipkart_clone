@@ -258,287 +258,205 @@ SizedBox(height: 10,),
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       crossAxisSpacing: 10,
-     
-      padding: EdgeInsets.all(12),
+     mainAxisSpacing: 10,
       childAspectRatio: 0.65,
      children: [
       // product phone
       Card(
         elevation: 2,
-        color: const Color.fromARGB(255, 253, 247, 247),
+        color: const Color.fromARGB(255, 241, 240, 240),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
           side: BorderSide(color: Colors.grey.shade300)
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 100,
-              width: double.infinity,
-              alignment: Alignment.center,
-              child: Image.asset('assets/image/mobile.png',
-              fit: BoxFit.contain,
-              ),
-            ),
-            SizedBox(height: 10,),
-           Text("           Mobiles",
-           style: TextStyle(
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+       children: [
+        Expanded(
+          child: Image.asset('assets/image/mobile.png',
+          fit: BoxFit.contain,
+
+          ),
+          ),
+          SizedBox(height: 8,),
+          Text(" Mobile",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),),
+          SizedBox(height: 5,),
+          Text("11,999",
+          style: TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.bold
-           ),
-           ),
-           SizedBox(height: 25,),
-           Padding(
-            padding:EdgeInsets.only(left: 13),
-            child: Container(
-              height: 20,
-              width: 45,
-               decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 4.3 ★',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-            ),
-             ),
-           SizedBox(height: 10,),
-Text("   ₹ 11,999",
-style: TextStyle(
-  fontSize: 22,
-  fontWeight: FontWeight.bold
-),
-),
-SizedBox(height: 8,),
-Padding(
-  padding: EdgeInsets.only(left: 13,),
-  child: Container(
-    height: 19,
-    width: 65,
-    decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 33% OFF',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-    ),
+            fontWeight: FontWeight.bold,
+            color: Colors.green,
+          ),
           
-    ),
-   ],
-  )
-    ), 
-    //product earpod 
- Card(
+          ),
+          Text("free delivery")
+        ]
+          ),
+        ),
+      ),
+        //product earpod
+        Card(
         elevation: 2,
-        color: const Color.fromARGB(255, 253, 247, 247),
+        color: const Color.fromARGB(255, 241, 240, 240),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
           side: BorderSide(color: Colors.grey.shade300)
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 150,
-              width: double.infinity,
-              alignment: Alignment.center,
-              child: Image.asset('assets/image/earpod.png',
-              fit: BoxFit.contain,
-              ),
-            ),
-           Text("          Audio & wearables",
-           style: TextStyle(
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+       children: [
+        Expanded(
+          child: Image.asset('assets/image/earpod.png',
+          fit: BoxFit.contain,
+
+          ),
+          ),
+          SizedBox(height: 8,),
+          Text("Airpods",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),),
+          SizedBox(height: 8,),
+          Text("2,999",
+          style: TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.bold
-           ),
-           ),
-           SizedBox(height: 5,),
-           Padding(
-            padding:EdgeInsets.only(left: 13),
-            child: Container(
-              height: 20,
-              width: 45,
-               decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 4.0 ★',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-            ),
-             ),
-           SizedBox(height: 10,),
-Text("   ₹ 999",
-style: TextStyle(
-  fontSize: 22,
-  fontWeight: FontWeight.bold
-),
-),
-SizedBox(height: 8,),
-Padding(
-  padding: EdgeInsets.only(left: 13,),
-  child: Container(
-    height: 19,
-    width: 65,
-    decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 40% OFF',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-    ),
+            fontWeight: FontWeight.bold,
+            color: Colors.green,
+          ),
           
-    ),
-   ],
-  )
-    ),
+          ),
+          Text("free delivery")
+        ]
+          ),
+        ),
+      ),  
+
     // product laptop 
-     Card(
+    Card(
         elevation: 2,
-        color: const Color.fromARGB(255, 253, 247, 247),
+        color: const Color.fromARGB(255, 241, 240, 240),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
           side: BorderSide(color: Colors.grey.shade300)
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 150,
-              width: double.infinity,
-              alignment: Alignment.center,
-              child: Image.asset('assets/image/laptop.png',
-              fit: BoxFit.contain,
-              ),
-            ),
-           Text("          Laptops",
-           style: TextStyle(
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+       children: [
+        Expanded(
+          child: Image.asset('assets/image/laptop.png',
+          fit: BoxFit.contain,
+
+          ),
+          ),
+          SizedBox(height: 8,),
+          Text(" Laptop",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),),
+          SizedBox(height: 8,),
+          Text("42,499",
+          style: TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.bold
-           ),
-           ),
-           SizedBox(height: 5,),
-           Padding(
-            padding:EdgeInsets.only(left: 13),
-            child: Container(
-              height: 20,
-              width: 45,
-               decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 4.1 ★',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-            ),
-             ),
-           SizedBox(height: 10,),
-Text("   ₹ 46,999",
-style: TextStyle(
-  fontSize: 22,
-  fontWeight: FontWeight.bold
-),
-),
-SizedBox(height: 8,),
-Padding(
-  padding: EdgeInsets.only(left: 13,),
-  child: Container(
-    height: 19,
-    width: 65,
-    decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 10% OFF',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-    ),
+            fontWeight: FontWeight.bold,
+            color: Colors.green,
+          ),
           
-    ),
-   ],
-  )
-    ),  
+          ),
+          Text("free delivery")
+        ]
+          ),
+        ),
+      ),
+      // makeup products
      Card(
         elevation: 2,
-        color: const Color.fromARGB(255, 253, 247, 247),
+        color: const Color.fromARGB(255, 241, 240, 240),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
           side: BorderSide(color: Colors.grey.shade300)
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 150,
-              width: double.infinity,
-              alignment: Alignment.center,
-              child: Image.asset('assets/image/cosmatics.jpeg',
-              fit: BoxFit.contain,
-              ),
-            ),
-           Text("         Beauty Products ",
-           style: TextStyle(
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+       children: [
+        Expanded(
+          child: Image.asset('assets/image/cosmatics.jpeg',
+          fit: BoxFit.contain,
+
+          ),
+          ),
+          SizedBox(height: 8,),
+          Text(" Cosmetics",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),),
+          SizedBox(height: 8,),
+          Text("899",
+          style: TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.bold
-           ),
-           ),
-           SizedBox(height: 5,),
-           Padding(
-            padding:EdgeInsets.only(left: 13),
-            child: Container(
-              height: 20,
-              width: 45,
-               decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 3.9 ★',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-            ),
-             ),
-           SizedBox(height: 10,),
-Text("   ₹ 899",
-style: TextStyle(
-  fontSize: 22,
-  fontWeight: FontWeight.bold
-),
-),
-SizedBox(height: 8,),
-Padding(
-  padding: EdgeInsets.only(left: 13,),
-  child: Container(
-    height: 19,
-    width: 65,
-    decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 56, 122, 58),
-      ),
-      child: Text(' 12% OFF',
-      style: TextStyle(
-        color: Colors.white
-      ),
-      ),
-    ),
+            fontWeight: FontWeight.bold,
+            color: Colors.green,
+          ),
           
-    ),
-   ],
-  )
-    ),   
+          ),
+          Text("free delivery")
+        ]
+          ),
+        ),
+      ),
           ],
         ),     
      ],
       )
    ),
+   bottomNavigationBar: BottomNavigationBar(
+    selectedItemColor: blue,
+    unselectedItemColor: Colors.grey,
+    selectedFontSize: 12,
+    unselectedFontSize: 12,
+    type: BottomNavigationBarType.fixed,
+    elevation: 10,
+    currentIndex: 0,
+    items: [
+      BottomNavigationBarItem(
+        icon: Icon(
+          Icons.home_outlined
+        ),
+        activeIcon: Icon(Icons.home),
+        label: 'Home'
+        ),
+        BottomNavigationBarItem(
+        icon: Icon(
+          Icons.shopping_cart_outlined
+        ),
+        activeIcon: Icon(Icons.shopping_cart),
+        label: 'Carts'
+        ),
+        BottomNavigationBarItem(
+        icon: Icon(
+          Icons.inventory_2_outlined
+        ),
+        activeIcon: Icon(Icons.inventory_2),
+        label: 'Orders'
+        ),
+BottomNavigationBarItem(
+        icon: Icon(
+          Icons.person_outline
+        ),
+        activeIcon: Icon(Icons.person),
+        label: 'Account'
+        ),
+    ]),
    );
   }
 }

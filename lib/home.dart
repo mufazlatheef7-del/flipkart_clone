@@ -7,6 +7,7 @@ class Home extends StatefulWidget {
 }
 class _HomeState extends State<Home> {
   final blue = const Color.fromARGB(255, 29, 86, 184);
+  var selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -419,44 +420,7 @@ SizedBox(height: 10,),
      ],
       )
    ),
-   bottomNavigationBar: BottomNavigationBar(
-    selectedItemColor: blue,
-    unselectedItemColor: Colors.grey,
-    selectedFontSize: 12,
-    unselectedFontSize: 12,
-    type: BottomNavigationBarType.fixed,
-    elevation: 10,
-    currentIndex: 0,
-    items: [
-      BottomNavigationBarItem(
-        icon: Icon(
-          Icons.home_outlined
-        ),
-        activeIcon: Icon(Icons.home),
-        label: 'Home'
-        ),
-        BottomNavigationBarItem(
-        icon: Icon(
-          Icons.shopping_cart_outlined
-        ),
-        activeIcon: Icon(Icons.shopping_cart),
-        label: 'Carts'
-        ),
-        BottomNavigationBarItem(
-        icon: Icon(
-          Icons.inventory_2_outlined
-        ),
-        activeIcon: Icon(Icons.inventory_2),
-        label: 'Orders'
-        ),
-BottomNavigationBarItem(
-        icon: Icon(
-          Icons.person_outline
-        ),
-        activeIcon: Icon(Icons.person),
-        label: 'Account'
-        ),
-    ]),
-   );
+  
+    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/bottomnavigation.dart';
+
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -28,11 +29,10 @@ class _LoginState extends State<Login> {
       ),
       body: Center(
         child:Container(
-          color: const Color.fromARGB(255, 244, 243, 243),
-          height: 500,  
-          width: double.infinity,
-          
           padding: EdgeInsets.all(20),
+          color: Colors.white60,
+          height: double.infinity,
+          width: double.infinity,
           child: Column(
            mainAxisAlignment: MainAxisAlignment.center,
            children: [
@@ -81,7 +81,7 @@ ElevatedButton(
   passwordController.text =="1234"){
     Navigator.pushReplacement(
       context, MaterialPageRoute(
-        builder: (context) =>Home())
+        builder: (context) =>Bottomnavigation())
         );
   }else{
     showDialog(
